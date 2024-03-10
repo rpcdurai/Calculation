@@ -1,7 +1,4 @@
-"""
-Import Sys
-"""
-import sys
+
 """
 A simple calculator module.
 """
