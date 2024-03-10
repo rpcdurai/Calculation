@@ -1,10 +1,8 @@
-"""
-Import Sys
-"""
-import sys
+
 """
 A simple calculator module.
 """
+
 class Calculator:
     """
     A class representing a simple calculator.
