@@ -1,7 +1,7 @@
 """
 A simple calculator module.
 """
-
+import sys
 class Calculator:
     """
     A class representing a simple calculator.
