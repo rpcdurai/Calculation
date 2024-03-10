@@ -42,5 +42,10 @@ def main():
     result = calc.add(3, 5)
     print("Result:", result)
 
+    calc = Calculator()
+    print("Enter two numbers:")
+    result = calc.sub(3, 5)
+    print("Result:", result)
+
 if __name__ == "__main__":
     main()
