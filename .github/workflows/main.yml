@@ -25,7 +25,8 @@ jobs:
         run: pip install pylint
 
       - name: Run pylint
-        run: pylint src/main/python/calc.py
+       # run: pylint src/main/python/calc.py
+        run : pylint src/unittest/python/calc.py
 
   build_and_test:
     runs-on: ubuntu-latest
@@ -52,10 +53,6 @@ jobs:
         with:
           name: test-results
           path: target/reports
-
-      -name: List Files #Options Step
-          run :
-          ls -R
 
       # Conditionally pass the build if coverage is greater than 50%
       - name: Check Coverage
