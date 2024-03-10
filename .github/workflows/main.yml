@@ -53,6 +53,10 @@ jobs:
           name: test-results
           path: target/reports
 
+      - name: List Files #Options Step
+        run :
+         ls -R
+
       # Conditionally pass the build if coverage is greater than 50%
       - name: Check Coverage
         if: success() && steps.build_and_test.outputs.coverage > 50
